@@ -18,12 +18,6 @@ namespace w2_petle
             //ex9(777);
             //ex9(256);
             //ex9(255);
-            ////ex10(12, 8);
-        }
-
-        private static void ex10(int a, int b)
-        {
-            //Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb. 
         }
 
         private static void ex9(int decimalNumber)
