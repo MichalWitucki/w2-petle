@@ -125,22 +125,22 @@ namespace w2_petle
             } while (!stopProgram);
 
         }
-        private static void ex3(int fibonacciParts)
+        private static void ex3(int fibonacciSequenceParts)
         {
             //Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie. 
-            int[] fibonacciSeq = new int[fibonacciParts];
+            int[] fibonacciSequence = new int[fibonacciSequenceParts];
 
-            for (int i = 0; i < fibonacciParts; i++)
+            for (int i = 0; i < fibonacciSequenceParts; i++)
             {
                 if (i == 0 || i == 1)
                 {
-                    fibonacciSeq[i] = i;
+                    fibonacciSequence[i] = i;
                 }
                 else
                 {
-                    fibonacciSeq[i] = fibonacciSeq[i - 2] + fibonacciSeq[i - 1];
+                    fibonacciSequence[i] = fibonacciSequence[i - 2] + fibonacciSequence[i - 1];
                 }
-                Console.Write($"{fibonacciSeq[i]} ");
+                Console.Write($"{fibonacciSequence[i]} ");
             }
         }
 
@@ -165,7 +165,7 @@ namespace w2_petle
         private static void ex1()
         {
             //Napisz program, który sprawdzi ile jest liczb pierwszych w zakresie 0 – 100
-            int noOfFirstNums = 0;
+            int numberOfPrimeNumbers = 0;
             for (int i = 2; i < 101; i++)
             {
                 int noOfDividers = 0;
@@ -178,11 +178,11 @@ namespace w2_petle
                 }
                 if (noOfDividers < 3)
                 {
-                    noOfFirstNums++;
+                    numberOfPrimeNumbers++;
                     Console.Write($"{i} ");
                 }
             }
-            Console.WriteLine($"Ilość liczb pierwszych w zakresie 0-100 = {noOfFirstNums}");
+            Console.WriteLine($"Ilość liczb pierwszych w zakresie 0-100 = {numberOfPrimeNumbers}");
         }
     }
 }
